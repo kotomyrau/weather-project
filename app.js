@@ -1,6 +1,6 @@
 // SELECT ELEMENTS
 const iconElement = document.querySelector(".weather-icon");
-const tempElement = document.querySelector(".temperature-value p");
+const tempElement = document.querySelector(".temperature-value h4");
 const descElement = document.querySelector(".temperature-description p");
 const locationElement = document.querySelector(".user-location p");
 const notificationElement = document.querySelector(".notification");
@@ -14,6 +14,8 @@ weather.temperature = {
 
 // APP CONSTS AND VARS
 const KELVIN = 273;
+
+// add date 
 // API KEY
 const key = "6e569cdf3cfdee395970869f38aa2221";
 
@@ -63,7 +65,7 @@ function getWeather(latitude, longitude){
 // DISPLAY WEATHER TO UI
 function displayWeather(){
     iconElement.innerHTML = `<img src="icons/${weather.iconId}.png"/>`;
-    tempElement.innerHTML = `${weather.temperature.value}°<span>C</span>`;
+    tempElement.innerHTML = `${weather.temperature.value}<span>°C</span>`;
     descElement.innerHTML = weather.description;
     locationElement.innerHTML = `${weather.city}, ${weather.country}`;
 }

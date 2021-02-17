@@ -1,8 +1,27 @@
 *{
-    font-family: "Poppins", sans-serif;
+    font-family: "Lexend Deca", sans-serif;
 }
 
 .container{
     background-color: pink;
     margin: 0 auto;
+    text-align: center;
+}
+
+.icon {
+    font-size: 24px;
+}
+.user-location p {
+    /* text-transform: uppercase; */
+}
+.temperature-value h4 {
+    font-size: 64px;
+}
+
+.temperature-value span {
+    font-size: 16px;
+}
+
+.temperature-description {
+    text-transform: uppercase;
 }

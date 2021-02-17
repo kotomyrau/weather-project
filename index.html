@@ -4,15 +4,23 @@
         <meta charset="UTF-8">
         <title>Weather Music Project</title>
         <link rel="stylesheet" href="style.css">
+        <!-- BOOTSTRAP -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
-    </head>
+        <!-- FONT AWESOME -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+        <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">    </head>
+        
     <body>
         <div class="container">
-            <div class="page-title">
-                <h6>THE WEATHER IS CURRENTLY...</h6>
+            <div class="icon">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="user-location">
+                <p>-</p>
             </div>
             <div class="notification"> </div>
             <div class="weather-container">
@@ -20,14 +28,12 @@
                     <img src="icons/unknown.png" alt="A cloud with question mark">
                 </div>
                 <div class="temperature-value">
-                    <p>- °<span>C</span></p>
+                    <h4>- <span>°C</span></h4>
                 </div>
                 <div class="temperature-description">
                     <p> - </p>
                 </div>
-                <div class="user-location">
-                    <p>-</p>
-                </div>
+
             </div>
         </div>
     
