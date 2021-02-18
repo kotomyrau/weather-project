@@ -25,3 +25,7 @@
 .temperature-description {
     text-transform: uppercase;
 }
+.music-container {
+    background-color: yellow;
+    padding: 50px;
+}
