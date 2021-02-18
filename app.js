@@ -181,5 +181,16 @@ function displayMusic() {
                 spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${clouds_N_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
             }
             break;
+        default:
+            if(dayOrNight == "d"){ 
+                // duvet day
+                const atmosphere_D_URI = "37i9dQZF1DXdNR7UbdVQiC";
+                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${atmosphere_D_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+            } else if(dayOrNight == "n"){
+                // all the feels
+                const atmosphere_N_URI = "37i9dQZF1DX7gIoKXt0gmx";
+                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${atmosphere_N_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+            }
+            break;
         }
 }
