@@ -102,6 +102,7 @@ tempElement.addEventListener("click", function(){
 
 function displayMusic() {
     const dayOrNight = weather.iconId.slice(-1);
+    const atmosphere = weather.iconId.slice(0);
     switch(weather.main){
         case "thunderstorm": 
         if(dayOrNight == "d"){ 
@@ -142,9 +143,20 @@ function displayMusic() {
                 const snow_D_URI = "37i9dQZF1DXa1BeMIGX5Du";
                 spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${snow_D_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
             } else if(dayOrNight == "n"){
-                // chill vibes
-                const snow_N_URI = "37i9dQZF1DX889U0CL85jj";
-                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${drizzle_N_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+                // winter sounds
+                const snow_N_URI = "37i9dQZF1DX4H7FFUM2osB";
+                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${snow_N_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+            }
+            break;
+        case (atmosphere == "5"): 
+            if(dayOrNight == "d"){ 
+                // duvet day
+                const atmosphere_D_URI = "37i9dQZF1DXdNR7UbdVQiC";
+                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${atmosphere_D_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+            } else if(dayOrNight == "n"){
+                // all the feels
+                const atmosphere_N_URI = "37i9dQZF1DX7gIoKXt0gmx";
+                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${atmosphere_N_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
             }
             break;
         case "clouds":
