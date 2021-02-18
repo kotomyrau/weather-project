@@ -108,88 +108,88 @@ function displayMusic() {
         if(dayOrNight == "d"){ 
             // beats & rhymes
             const storm_D_URI = "37i9dQZF1DXcA6dRp8rwj6";
-            spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${storm_D_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+            spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${storm_D_URI}" width="100%" height="240" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
         } else if(dayOrNight == "n"){
             // dark & stormy
             const storm_N_URI = "37i9dQZF1DX2pSTOxoPbx9";
-            spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${storm_N_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+            spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${storm_N_URI}" width="100%" height="240" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
         }
         break;
         case "rain": 
             if(dayOrNight == "d"){ 
                 // rainy day
                 const rain_D_URI = "37i9dQZF1DXbvABJXBIyiY";
-                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${rain_D_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${rain_D_URI}" width="100%" height="240" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
             } else if(dayOrNight == "n"){
                 // spotify & chill
                 const rain_N_URI = "37i9dQZF1DX7ZnTv0GKubq";
-                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${rain_N_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${rain_N_URI}" width="100%" height="240" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
             }
             break;
         case "drizzle": 
             if(dayOrNight == "d"){ 
                 // creamy
                 const drizzle_D_URI = "37i9dQZF1DXdgz8ZB7c2CP";
-                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${drizzle_D_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${drizzle_D_URI}" width="100%" height="240" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
             } else if(dayOrNight == "n"){
                 // chill vibes
                 const drizzle_N_URI = "37i9dQZF1DX889U0CL85jj";
-                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${drizzle_N_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${drizzle_N_URI}" width="100%" height="240" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
             }
             break;
         case "snow": 
             if(dayOrNight == "d"){ 
                 // coffee & chill
                 const snow_D_URI = "37i9dQZF1DXa1BeMIGX5Du";
-                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${snow_D_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${snow_D_URI}" width="100%" height="240" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
             } else if(dayOrNight == "n"){
                 // winter sounds
                 const snow_N_URI = "37i9dQZF1DX4H7FFUM2osB";
-                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${snow_N_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${snow_N_URI}" width="100%" height="240" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
             }
             break;
         case (atmosphere == "5"): 
             if(dayOrNight == "d"){ 
                 // duvet day
                 const atmosphere_D_URI = "37i9dQZF1DXdNR7UbdVQiC";
-                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${atmosphere_D_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${atmosphere_D_URI}" width="100%" height="240" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
             } else if(dayOrNight == "n"){
                 // all the feels
                 const atmosphere_N_URI = "37i9dQZF1DX7gIoKXt0gmx";
-                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${atmosphere_N_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${atmosphere_N_URI}" width="100%" height="240" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
             }
             break;
         case "clouds":
             if(dayOrNight == "d"){ 
                 // chill hits 
                 const clouds_D_URI = "37i9dQZF1DX4WYpdgoIcn6";
-                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${clouds_D_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${clouds_D_URI}" width="100%" height="240" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
             } else if(dayOrNight == "n"){
                 // sweater weather instrumentals 
                 const clouds_N_URI = "37i9dQZF1DWUvZBXGjNCU4";
-                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${clouds_N_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${clouds_N_URI}" width="100%" height="240" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
             }
             break;
         case "clear":
             if(dayOrNight == "d"){ 
                 // happy beats 
                 const clouds_D_URI = "37i9dQZF1DWSf2RDTDayIx";
-                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${clouds_D_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${clouds_D_URI}" width="100%" height="240" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
             } else if(dayOrNight == "n"){
                 // night pop
                 const clouds_N_URI = "37i9dQZF1DXbcP8BbYEQaO";
-                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${clouds_N_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${clouds_N_URI}" width="100%" height="240" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
             }
             break;
         default:
             if(dayOrNight == "d"){ 
                 // duvet day
                 const atmosphere_D_URI = "37i9dQZF1DXdNR7UbdVQiC";
-                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${atmosphere_D_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${atmosphere_D_URI}" width="100%" height="240" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
             } else if(dayOrNight == "n"){
                 // all the feels
                 const atmosphere_N_URI = "37i9dQZF1DX7gIoKXt0gmx";
-                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${atmosphere_N_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${atmosphere_N_URI}" width="100%" height="240" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
             }
             break;
         }
