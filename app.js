@@ -53,15 +53,17 @@ function getWeather(latitude, longitude){
             return data;
         })
         .then(function(data){
+            weather.country = data.sys.country;
+            weather.iconId = data.weather[0].icon;
             weather.temperature.value = Math.floor(data.main.temp - KELVIN);
             weather.description = data.weather[0].description;
-            weather.iconId = data.weather[0].icon;
+    
             weather.city = data.name;
-            weather.country = data.sys.country;
-            weather.main = data.weather[0].main
+            weather.main = data.weather[0].main.toLowerCase()
         })
         .then(function(){
             displayWeather();
+            displayMusic();
         });
 }
 
@@ -69,12 +71,12 @@ function getWeather(latitude, longitude){
 function displayWeather(){
     iconElement.innerHTML = `<img src="icons/${weather.iconId}.png"/>`;
     tempElement.innerHTML = `${weather.temperature.value}<span>°C</span>`;
-    descElement.innerHTML = weather.description;
+    descElement.innerHTML = weather.description + weather.iconId + weather.main;
     locationElement.innerHTML = `${weather.city}, ${weather.country}`;
-    if(weather.main.toLowerCase() == "rain") {
-        const rainURI = "37i9dQZF1DXbvABJXBIyiY";
-        spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${rainURI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
-    }
+    // if(weather.main.toLowerCase() == "rain") {
+    //     const rainURI = "37i9dQZF1DXbvABJXBIyiY";
+    //     spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${rainURI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+    // }
 }
 
 // C to F conversion
@@ -98,9 +100,74 @@ tempElement.addEventListener("click", function(){
     }
 });
 
-// function weatherMusic() {
-//     if(weather.main.toLowercase() == "rain") {
-//         rainURI = "37i9dQZF1DXbvABJXBIyiY";
-//         spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${rainURI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
-//     }
-// }
+function displayMusic() {
+    const dayOrNight = weather.iconId.slice(-1);
+    switch(weather.main){
+        case "thunderstorm": 
+        if(dayOrNight == "d"){ 
+            // beats & rhymes
+            const storm_D_URI = "37i9dQZF1DXcA6dRp8rwj6";
+            spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${storm_D_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+        } else if(dayOrNight == "n"){
+            // dark & stormy
+            const storm_N_URI = "37i9dQZF1DX2pSTOxoPbx9";
+            spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${storm_N_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+        }
+        break;
+        case "rain": 
+            if(dayOrNight == "d"){ 
+                // rainy day
+                const rain_D_URI = "37i9dQZF1DXbvABJXBIyiY";
+                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${rain_D_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+            } else if(dayOrNight == "n"){
+                // spotify & chill
+                const rain_N_URI = "37i9dQZF1DX7ZnTv0GKubq";
+                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${rain_N_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+            }
+            break;
+        case "drizzle": 
+            if(dayOrNight == "d"){ 
+                // creamy
+                const drizzle_D_URI = "37i9dQZF1DXdgz8ZB7c2CP";
+                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${drizzle_D_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+            } else if(dayOrNight == "n"){
+                // chill vibes
+                const drizzle_N_URI = "37i9dQZF1DX889U0CL85jj";
+                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${drizzle_N_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+            }
+            break;
+        case "snow": 
+            if(dayOrNight == "d"){ 
+                // coffee & chill
+                const snow_D_URI = "37i9dQZF1DXa1BeMIGX5Du";
+                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${snow_D_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+            } else if(dayOrNight == "n"){
+                // chill vibes
+                const snow_N_URI = "37i9dQZF1DX889U0CL85jj";
+                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${drizzle_N_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+            }
+            break;
+        case "clouds":
+            if(dayOrNight == "d"){ 
+                // chill hits 
+                const clouds_D_URI = "37i9dQZF1DX4WYpdgoIcn6";
+                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${clouds_D_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+            } else if(dayOrNight == "n"){
+                // sweater weather instrumentals 
+                const clouds_N_URI = "37i9dQZF1DWUvZBXGjNCU4";
+                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${clouds_N_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+            }
+            break;
+        case "clear":
+            if(dayOrNight == "d"){ 
+                // happy beats 
+                const clouds_D_URI = "37i9dQZF1DWSf2RDTDayIx";
+                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${clouds_D_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+            } else if(dayOrNight == "n"){
+                // night pop
+                const clouds_N_URI = "37i9dQZF1DXbcP8BbYEQaO";
+                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${clouds_N_URI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+            }
+            break;
+        }
+}
