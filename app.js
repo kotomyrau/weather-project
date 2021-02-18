@@ -4,6 +4,8 @@ const tempElement = document.querySelector(".temperature-value h4");
 const descElement = document.querySelector(".temperature-description p");
 const locationElement = document.querySelector(".user-location p");
 const notificationElement = document.querySelector(".notification");
+const spotifyURI = document.querySelector(".spotify-uri");
+
 
 // App data
 const weather = {};
@@ -56,6 +58,7 @@ function getWeather(latitude, longitude){
             weather.iconId = data.weather[0].icon;
             weather.city = data.name;
             weather.country = data.sys.country;
+            weather.main = data.weather[0].main
         })
         .then(function(){
             displayWeather();
@@ -68,6 +71,10 @@ function displayWeather(){
     tempElement.innerHTML = `${weather.temperature.value}<span>°C</span>`;
     descElement.innerHTML = weather.description;
     locationElement.innerHTML = `${weather.city}, ${weather.country}`;
+    if(weather.main.toLowerCase() == "rain") {
+        const rainURI = "37i9dQZF1DXbvABJXBIyiY";
+        spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${rainURI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+    }
 }
 
 // C to F conversion
@@ -90,3 +97,10 @@ tempElement.addEventListener("click", function(){
         weather.temperature.unit = "celsius"
     }
 });
+
+// function weatherMusic() {
+//     if(weather.main.toLowercase() == "rain") {
+//         rainURI = "37i9dQZF1DXbvABJXBIyiY";
+//         spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${rainURI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+//     }
+// }
