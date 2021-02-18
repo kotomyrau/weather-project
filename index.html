@@ -15,17 +15,19 @@
         <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">    </head>
         
     <body>
-        <div class="container">
-            <div class="icon">
-                <i class="fas fa-map-marker-alt"></i>
+        <div class="container-fluid">
+            <div class="notification">
+                <!-- <p>this isnt working</p> -->
             </div>
-            <div class="user-location">
-                <p>-</p>
-            </div>
-            <div class="notification"> </div>
             <div class="weather-container">
+                <div class="location-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="user-location">
+                    <p>-</p>
+                </div>
                 <div class="weather-icon">
-                    <img src="icons/unknown.png" alt="A cloud with question mark">
+                    <img src="icons/unknown.png">
                 </div>
                 <div class="temperature-value">
                     <h4>- <span>°C</span></h4>
@@ -33,12 +35,13 @@
                 <div class="temperature-description">
                     <p> - </p>
                 </div>
-
             </div>
             <div class="music-container">
                 <div class="spotify-uri">
-                    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div></div>
+                    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M" width="100%" height="240" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
 

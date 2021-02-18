@@ -2,13 +2,33 @@
     font-family: "Lexend Deca", sans-serif;
 }
 
-.container{
-    background-color: pink;
-    margin: 0 auto;
+.container-fluid{
+    /* background-color: pink; */
+    background-image: url("bird.gif");
+    background-size: contain;
+    /* margin: 0 auto; */
     text-align: center;
+    height: 100vh;
+    position: relative;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
 }
 
-.icon {
+.weather-container{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+.notification{
+    background-color:plum;
+    height: 8vh;
+}
+.location-icon {
     font-size: 24px;
 }
 .user-location p {
@@ -26,31 +46,21 @@
     text-transform: uppercase;
 }
 .music-container {
-    background-color: yellow;
-    padding: 50px;
+    background-color: black;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    /* display: flex; */
+    /* justify-content: center; */
+    height: fit-content;
+    width: 100%;
 }
 
-/* rainy day
-spotify:playlist:37i9dQZF1DXbvABJXBIyiY */
-
-/* sunny day 
-spotify:playlist:37i9dQZF1DX1BzILRveYHb 
-spotify:playlist:37i9dQZF1DX6ALfRKlHn1t
-spotify:playlist:37i9dQZF1DWSf2RDTDayIx*/
-
-/* cloudy day 
-spotify:playlist:37i9dQZF1DWUvZBXGjNCU4 */
-/* 
-stormy
-spotify:playlist:37i9dQZF1DX2pSTOxoPbx9 */
-
-/* windy 
-spotify:playlist:37i9dQZF1DX5NsFgylu4qQ 
-spotify:playlist:37i9dQZF1DX5CdVP4rz81C (fresh & chill)*/
-/* 
-snow
-spotify:playlist:4sEKPcBYLcW3woDviiaigj
-spotify:playlist:37i9dQZF1DXaIrEwuQ3hyy winter chillout
-
-night sunny
-spotify:playlist:37i9dQZF1DXbcP8BbYEQaO night pop */
+.spotify-uri{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
