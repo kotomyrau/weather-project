@@ -73,10 +73,6 @@ function displayWeather(){
     tempElement.innerHTML = `${weather.temperature.value}<span>°C</span>`;
     descElement.innerHTML = weather.description;
     locationElement.innerHTML = `${weather.city}, ${weather.country}`;
-    // if(weather.main.toLowerCase() == "rain") {
-    //     const rainURI = "37i9dQZF1DXbvABJXBIyiY";
-    //     spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${rainURI}" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
-    // }
 }
 
 // C to F conversion
