@@ -5,7 +5,8 @@ const descElement = document.querySelector(".temperature-description p");
 const locationElement = document.querySelector(".user-location p");
 const notificationElement = document.querySelector(".notification");
 const spotifyURI = document.querySelector(".spotify-uri");
-
+const backgroundElement = document.querySelector(".main-container");
+const locationIconElement = document.querySelector(".location-icon");
 
 // App data
 const weather = {};
@@ -23,16 +24,16 @@ const key = "6e569cdf3cfdee395970869f38aa2221";
 
 // CHECK IF BROWSER SUPPORTS GEOLOCATION
 if('geolocation' in navigator){
-    navigator.geolocation.getCurrentPosition(setPosition, showError);
+    navigator.geolocation.getCurrentPosition(userLocation, showError);
 }else{
     notificationElement.style.display = "block";
     notificationElement.innerHTML = "<p>Browser doesn't Support Geolocation</p>";
 }
 
-// SET USER'S POSITION
-function setPosition(position){
-    let latitude = position.coords.latitude;
-    let longitude = position.coords.longitude;
+// SET USER'S LOCATION
+function userLocation(location){
+    let longitude = location.coords.longitude;
+    let latitude = location.coords.latitude;
     
     getWeather(latitude, longitude);
 }
@@ -63,6 +64,7 @@ function getWeather(latitude, longitude){
         })
         .then(function(){
             displayWeather();
+            changeBackground();
             displayMusic();
         });
 }
@@ -96,6 +98,15 @@ tempElement.addEventListener("click", function(){
     }
 });
 
+function changeBackground() {
+    if(weather.iconId[2] == "n"){
+        backgroundElement.style.backgroundColor = "#031524";
+        tempElement.style.color = "#FEFEFE"
+        descElement.style.color = "#FEFEFE"
+        locationElement.style.color = "#FEFEFE"
+        locationIconElement.style.color = "#FEFEFE"
+    }
+}
 function displayMusic() {
     const dayOrNight = weather.iconId.slice(-1);
     const atmosphere = weather.iconId.slice(0);

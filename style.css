@@ -3,12 +3,13 @@
 }
 
 
-.container-fluid{
+.main-container{
     background-color: #7FBEE8;
     background-size: cover;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     margin: 0;
-    padding: 8vh;
+    padding: 8vh 0 0 0;
     position: relative;
     text-align: center;
 }
@@ -24,10 +25,19 @@
     padding: 3.8vh;
     white-space: nowrap;
     width: fit-content;
+    display: none;
 }
 
 .weather-container{
     margin: 8vh auto;
+}
+
+.music-container {
+    background-color: pink;
+    bottom: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100px;
 }
 
 iframe {
