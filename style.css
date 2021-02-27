@@ -9,7 +9,7 @@
     height: auto;
     min-height: 100vh;
     margin: 0;
-    padding-top: 8vh 0 0 0;
+    padding: 8vh 0 0 0;
     position: relative;
     text-align: center;
 }
@@ -25,6 +25,7 @@
     padding: 3.8vh;
     white-space: nowrap;
     width: fit-content;
+    display: none;
 }
 
 .weather-container{
