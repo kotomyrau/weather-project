@@ -2,7 +2,7 @@
     font-family: "Lexend Deca", sans-serif;
 }
 
-
+ 
 .main-container{
     background-color: #7FBEE8;
     background-size: cover;
@@ -32,12 +32,20 @@
     margin: 8vh auto;
 }
 
-.music-container {
+/* .music-container {
     background-color: pink;
     bottom: 0;
     position: absolute;
     width: 100vw;
     height: 100px;
+} */
+
+.music-container {
+    background-color: pink;
+    height: 20vh;
+    width: 50vw;
+    margin: auto;
+    border-radius: 2vh;
 }
 
 iframe {
