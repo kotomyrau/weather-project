@@ -2,14 +2,14 @@
     font-family: "Lexend Deca", sans-serif;
 }
 
-
+ 
 .main-container{
     background-color: #7FBEE8;
     background-size: cover;
     height: auto;
     min-height: 100vh;
     margin: 0;
-    padding: 8vh 0 0 0;
+    padding: 8vh 0;
     position: relative;
     text-align: center;
 }
@@ -29,17 +29,41 @@
 }
 
 .weather-container{
-    margin: 8vh auto;
+    margin: auto;
 }
 
-.music-container {
+/* .music-container {
     background-color: pink;
     bottom: 0;
     position: absolute;
     width: 100vw;
     height: 100px;
+} */
+
+.music-container {
+    background-color: white;
+    height: auto;
+    padding: 4vh;
+    margin: 8vh auto 0;
+    width: 80%;
+    border-radius: 2vh;
+}
+.music-link img {
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    width: 70%;
+    height: auto;
+    margin-top: 2vh;
 }
 
+.music-link a {
+    color: black;
+    font-size: 2.5vh;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+a:hover {
+    text-decoration: none;
+}
 iframe {
     border: 10px solid #FEFEFE;
     border-radius: 5px;
