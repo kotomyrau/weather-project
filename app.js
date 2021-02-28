@@ -8,7 +8,7 @@ const spotifyURI = document.querySelector(".spotify-uri");
 const backgroundElement = document.querySelector(".main-container");
 const locationIconElement = document.querySelector(".location-icon");
 
-// App data
+// App data 
 const weather = {};
 
 weather.temperature = {
