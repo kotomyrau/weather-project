@@ -66,6 +66,7 @@ function getWeather(latitude, longitude){
             displayWeather();
             changeBackground();
             displayMusic();
+            
         });
 }
 
@@ -107,6 +108,7 @@ function changeBackground() {
         locationIconElement.style.color = "#FEFEFE"
     }
 }
+
 function displayMusic() {
     const dayOrNight = weather.iconId.slice(-1);
     const atmosphere = weather.iconId.slice(0);
@@ -185,7 +187,7 @@ function displayMusic() {
             } else if(dayOrNight == "n"){
                 // night pop
                 const clouds_N_URI = "37i9dQZF1DXbcP8BbYEQaO";
-                spotifyURI.innerHTML = `<iframe src="https://open.spotify.com/embed/playlist/${clouds_N_URI}" width="100%" height="100vh" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+                spotifyURI.innerHTML = `<a href="spotify:playlist:${clouds_N_URI}" target="blank">night pop<br> <img id="coverArt" src="../spotify-playlist-images/night-pop.jpg" alt="night pop cover art"></a>`;
             }
             break;
         default:
