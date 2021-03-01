@@ -118,7 +118,7 @@ function displayMusic() {
             // beats & rhymes
             const storm_D_URI = "37i9dQZF1DXcA6dRp8rwj6";
             spotifyURI.innerHTML = `<a href="spotify:playlist:${storm_D_URI}" target="blank">beats & rhymes<br> <img src="../spotify-playlist-images/beats-rhymes.jpg" alt="beats and rhymes cover art"></a>`;
-            backgroundElement.style.backgroundImage = "linear-gradient(#727272, #FEFEFE)";
+            backgroundElement.style.backgroundImage = "linear-gradient(#687B90, #FEFEFE)";
         } else if(dayOrNight == "n"){
             // dark & stormy
             const storm_N_URI = "37i9dQZF1DX2pSTOxoPbx9";
@@ -131,7 +131,7 @@ function displayMusic() {
                 // rainy day
                 const rain_D_URI = "37i9dQZF1DXbvABJXBIyiY";
                 spotifyURI.innerHTML = `<a href="spotify:playlist:${rain_D_URI}" target="blank">rainy day<br> <img src="../spotify-playlist-images/rainy-day.jpg" alt="rainy day cover art"></a>`;
-                backgroundElement.style.backgroundImage = "linear-gradient(#95948F, #FEFEFE)";
+                backgroundElement.style.backgroundImage = "linear-gradient(#849BB5, #FEFEFE)";
             } else if(dayOrNight == "n"){
                 // spotify & chill
                 const rain_N_URI = "37i9dQZF1DX7ZnTv0GKubq";
@@ -144,7 +144,7 @@ function displayMusic() {
                 // creamy
                 const drizzle_D_URI = "37i9dQZF1DXdgz8ZB7c2CP";
                 spotifyURI.innerHTML = `<a href="spotify:playlist:${drizzle_D_URI}" target="blank">creamy<br> <img src="../spotify-playlist-images/creamy.jpg" alt="creamy cover art"></a>`;
-                backgroundElement.style.backgroundImage = "linear-gradient(#D3D2CB, #FEFEFE)";
+                backgroundElement.style.backgroundImage = "linear-gradient(#AABECD, #FEFEFE)";
             } else if(dayOrNight == "n"){
                 // chill vibes
                 const drizzle_N_URI = "37i9dQZF1DX889U0CL85jj";
@@ -192,7 +192,7 @@ function displayMusic() {
                 // chill hits 
                 const clouds_D_URI = "37i9dQZF1DX4WYpdgoIcn6";
                 spotifyURI.innerHTML = `<a href="spotify:playlist:${clouds_D_URI}" target="blank">chill hits<br> <img src="../spotify-playlist-images/chill-hits.jpg" alt="chill hits cover art"></a>`;
-                backgroundElement.style.backgroundImage = "linear-gradient(#FFFADE, #FEFEFE)";
+                backgroundElement.style.backgroundImage = "linear-gradient(#8FAFBF, #FEFEFE)";
             } else if(dayOrNight == "n"){
                 // sweater weather instrumentals 
                 const clouds_N_URI = "37i9dQZF1DWUvZBXGjNCU4";
@@ -205,7 +205,7 @@ function displayMusic() {
                 // happy beats 
                 const clear_D_URI = "37i9dQZF1DWSf2RDTDayIx";
                 spotifyURI.innerHTML = `<a href="spotify:playlist:${clear_D_URI}" target="blank">happy beats<br> <img src="../spotify-playlist-images/happy-beats.jpg" alt="happy beats cover art"></a>`;
-                backgroundElement.style.backgroundImage = "linear-gradient(#FFED8C, #FEFEFE)";
+                backgroundElement.style.backgroundImage = "linear-gradient(#88CEFF, #FEFEFE)";
             } else if(dayOrNight == "n"){
                 // night pop
                 const clear_N_URI = "37i9dQZF1DXbcP8BbYEQaO";
