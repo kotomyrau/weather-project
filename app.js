@@ -157,7 +157,16 @@ function displayMusic() {
                 spotifyURI.innerHTML = `<a href="spotify:playlist:${snow_N_URI}" target="blank">winter sounds<br> <img src="../spotify-playlist-images/winter-sounds.jpg" alt="winter sounds cover art"></a>`;
             }
             break;
-        case (atmosphere == "5"): 
+        case ("mist"): 
+        case ("smoke"): 
+        case ("haze"): 
+        case ("dust"): 
+        case ("fog"): 
+        case ("sand"): 
+        case ("dust"): 
+        case ("ash"): 
+        case ("squall"):
+        case ("tornado"):  
             if(dayOrNight == "d"){ 
                 // duvet day
                 const atmosphere_D_URI = "37i9dQZF1DXdNR7UbdVQiC";
