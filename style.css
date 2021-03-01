@@ -4,7 +4,7 @@
 
  
 .main-container{
-    background-color: #7FBEE8;
+    background-image: linear-gradient(#575757, #FEFEFE);
     background-size: cover;
     height: auto;
     min-height: 100vh;
